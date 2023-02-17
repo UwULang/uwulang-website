@@ -2,7 +2,7 @@ const DEFAULT_TITLE = "UwULang";
 const DEFAULT_DESCRIPTION =
   "The best programming language to take over the world!";
 // localhost default
-const DEFAULT_BASE_URL = "http://localhost:3000";
+const DEFAULT_BASE_URL = "https://uwulang.vercel.app/";
 
 const CONSTANTS = {
   DEFAULT_TITLE: DEFAULT_TITLE,
@@ -20,7 +20,7 @@ const CONSTANTS = {
   ],
   DEFAULT_SITE_NAME: "UwULang",
   DEFAULT_BASE_URL: DEFAULT_BASE_URL,
-  DEFAULT_PREVIEW_IMG: "banner.png",
+  DEFAULT_PREVIEW_IMG: "https://uwulang.vercel.app/banner.png",
   DEFAULT_TWITTER_TITLE: DEFAULT_TITLE,
   DEFAULT_TWITTER_DESCRIPTION: DEFAULT_DESCRIPTION,
   DEFAULT_GOOGLE_ANALYTICS: "",
