@@ -19,7 +19,7 @@ export default function Navbar() {
               src="/logo.png"
               alt="UwULang logo"
               title="UwULang"
-              className="my-4 h-12 w-12 transition-all duration-[1.5s]"
+              className="my-4 h-12 w-12 hover:animate-pulse"
             />
           </Link>
         </div>
@@ -30,7 +30,7 @@ export default function Navbar() {
         >
           {/* <MobileNav /> */}
           {/* list of nav elements */}
-          <ul className="flex items-center text-2xl text-dark -sm:hidden ">
+          <ul className="flex items-center text-2xl text-dark -sm:hidden">
             <li className="mx-4">
               <nav>
                 <Link href="/#tryit" title="Try it">

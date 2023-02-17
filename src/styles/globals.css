@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   .video_container {
     position: absolute;
@@ -27,5 +28,11 @@
     min-width: 100vw;
     min-height: 100vh;
     max-width: none;
+  }
+
+  .quote__outline {
+    /* border is a gradient */
+    border: 16px solid transparent;
+    border-image: linear-gradient(to bottom, #9333ea, #34d399) 1;
   }
 }

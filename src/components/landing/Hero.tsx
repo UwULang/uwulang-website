@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="video_container">
+    <div className="video_container" id="hero">
       <video
         autoPlay
         loop
