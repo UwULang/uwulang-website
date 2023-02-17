@@ -1,4 +1,4 @@
-const msg_1: string = "👇😒👇👇👇👉👆👈😡👉🥺👇👇😒👇👇👇👇";
+const msg_1 = "👇😒👇👇👇👉👆👈😡👉🥺👇👇😒👇👇👇👇";
 const msg_2 = "👇👉👆👈😡👉🥺👉👇😒👇👇👇👉👆👈😡👉🥺";
 
 export default function Quote() {
@@ -17,15 +17,27 @@ export default function Quote() {
       </div>
       <div className="banner_slanted relative flex overflow-x-hidden border-y-4 border-dark bg-primary">
         <div className="animate-marquee whitespace-nowrap py-6">
-          {msg_1.split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/).map((char) => {
-            return <span className="mx-4 text-4xl">{char}</span>;
-          })}
+          {msg_1
+            .split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/)
+            .map((char, index) => {
+              return (
+                <span className="mx-4 text-4xl" key={`1-${index}`}>
+                  {char}
+                </span>
+              );
+            })}
         </div>
 
         <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-6">
-          {msg_2.split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/).map((char) => {
-            return <span className="mx-4 text-4xl">{char}</span>;
-          })}
+          {msg_2
+            .split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/)
+            .map((char, index) => {
+              return (
+                <span className="mx-4 text-4xl" key={`2-${index}`}>
+                  {char}
+                </span>
+              );
+            })}
         </div>
       </div>
     </>
