@@ -7,7 +7,7 @@ module.exports = {
         primary: "#FFD700",
         dark: "#18181B",
         button: "#FFD700",
-        buttonHover: "#FFD700",
+        buttonHover: "#FADC3C",
       },
       screens: {
         "-2xl": { max: "1535px" },

@@ -33,7 +33,7 @@ export default function Navbar() {
           <ul className="flex items-center text-2xl text-dark -sm:hidden">
             <li className="mx-4">
               <nav>
-                <Link href="/#tryit" title="Try it">
+                <Link href="/#demo" title="Try it">
                   Try it
                 </Link>
               </nav>
