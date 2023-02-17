@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  .video_container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background: red;
+
+    overflow: hidden;
+  }
+  .video_container__video {
+    position: absolute;
+
+    margin: auto;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: none;
+  }
+}

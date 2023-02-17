@@ -1,0 +1,29 @@
+const DEFAULT_TITLE = "UwULang";
+const DEFAULT_DESCRIPTION =
+  "The best programming language to take over the world!";
+// localhost default
+const DEFAULT_BASE_URL = "http://localhost:3000";
+
+const CONSTANTS = {
+  DEFAULT_TITLE: DEFAULT_TITLE,
+  DEFAULT_AUTHOR: "Antarctic Solutions",
+  DEFAULT_DESCRIPTION: DEFAULT_DESCRIPTION,
+  DEFAULT_KEYWORDS: [
+    "uwu",
+    "uwulang",
+    "programming",
+    "language",
+    "programming language",
+    "programming language to take over the world",
+    "best programming language",
+    "brainfuck",
+  ],
+  DEFAULT_SITE_NAME: "UwULang",
+  DEFAULT_BASE_URL: DEFAULT_BASE_URL,
+  DEFAULT_PREVIEW_IMG: "banner.png",
+  DEFAULT_TWITTER_TITLE: DEFAULT_TITLE,
+  DEFAULT_TWITTER_DESCRIPTION: DEFAULT_DESCRIPTION,
+  DEFAULT_GOOGLE_ANALYTICS: "",
+};
+
+export default CONSTANTS;
