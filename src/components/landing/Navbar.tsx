@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     // animate border bottom on load from left to right
-    <header className="border-anim fixed top-0 z-50 w-full bg-gradient-to-b from-white/90 to-transparent backdrop-blur-sm">
+    <header className="navborder fixed top-0 z-50 w-full bg-gradient-to-b from-white/90 to-transparent backdrop-blur-sm">
       <div className="m-auto flex max-w-[88em] flex-1 items-center justify-between px-16 -sm:px-4">
         <div className="flex items-center">
           <Link href="/">
@@ -38,16 +38,21 @@ export default function Navbar() {
                 </Link>
               </nav>
             </li>
+            {/* not available for now */}
             <li className="mx-4">
               <nav>
-                <Link href="/docs" title="Docs">
+                <Link href="/docs" title="Docs" className="cursor-not-allowed">
                   Docs
                 </Link>
               </nav>
             </li>
-            <li className="mx-4">
+            <li className="mx-4 cursor-not-allowed">
               <nav>
-                <Link href="/transpiler" title="Transpiler">
+                <Link
+                  href="/transpiler"
+                  title="Transpiler"
+                  className="cursor-not-allowed"
+                >
                   Transpiler
                 </Link>
               </nav>

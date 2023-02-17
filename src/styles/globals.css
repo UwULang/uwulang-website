@@ -35,4 +35,27 @@
     border: 16px solid transparent;
     border-image: linear-gradient(to bottom, #9333ea, #34d399) 1;
   }
+
+  .banner_slanted {
+    transform: rotate(-2deg) translateZ(0) translateY(-60px) scale(1.1);
+  }
+  /* Header on load anim */
+  .navborder::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.3);
+    animation: border_animation 1s linear forwards;
+  }
+
+  @keyframes border_animation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 }
