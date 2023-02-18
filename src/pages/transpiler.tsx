@@ -53,6 +53,7 @@ const Transpiler: NextPage = () => {
     setTranslate(translated === undefined ? "" : translated.join(""));
   }, [bf]);
 
+  /* eslint-disable @typescript-eslint/no-floating-promises */
   const copy = () => {
     navigator.clipboard.writeText(translate);
     setShowToast(true);
