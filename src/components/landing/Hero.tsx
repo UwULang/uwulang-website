@@ -9,7 +9,12 @@ export default function Hero() {
         // className="absolute h-screen w-screen bg-center object-cover"
         className="video_container__video"
       >
-        <source src="/background.webm" type="video/mp4" />
+        <source src="/background.webm" type="video/webm" />
+        <source
+          src="/background_mobile.webm"
+          type="video/webm"
+          media="all and (max-width: 480px)"
+        />
       </video>
       <video
         autoPlay
@@ -18,7 +23,12 @@ export default function Hero() {
         // className="absolute h-screen w-screen bg-center object-cover"
         className="video_container__video"
       >
-        <source src="/main.webm" type="video/mp4" />
+        <source src="/main.webm" type="video/webm" />
+        <source
+          src="/main_mobile.webm"
+          type="video/webm"
+          media="all and (max-width: 480px)"
+        />
       </video>
     </div>
   );

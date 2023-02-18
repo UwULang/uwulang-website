@@ -13,6 +13,16 @@
     height: 100vh;
     overflow: hidden;
   }
+
+  /* media query if less that 540 */
+  /* @media (max-width: 540px) {
+    .video_container {
+      height: 50vh;
+    }
+    .video_container__video {
+      min-height: 50vh;
+    }
+  } */
   .video_container__video {
     position: absolute;
 

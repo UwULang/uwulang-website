@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MobileNav from "../common/MobileNav";
 
 export default function Navbar() {
   // animate opacity on load
@@ -28,7 +29,7 @@ export default function Navbar() {
             loaded ? "opacity-100" : "opacity-0"
           } flex items-center transition-opacity duration-700 `}
         >
-          {/* <MobileNav /> */}
+          <MobileNav />
           {/* list of nav elements */}
           <ul className="flex items-center text-2xl text-dark -sm:hidden">
             <li className="mx-4">

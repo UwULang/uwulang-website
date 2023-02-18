@@ -17,11 +17,15 @@ const SponsorButton1: React.FC<BaseButtonProps> = ({ text }) => {
 export default function Sponsor() {
   return (
     <div
-      className="abstract_background m-auto bg-dark p-32 pb-16 text-8xl text-white -lg:text-6xl"
+      className="abstract_background m-auto bg-dark p-32 pb-16 text-8xl text-white -lg:text-6xl -md:p-4 -md:pt-16"
       id="contribute"
     >
       <div className="m-auto max-w-4xl">
-        <h2 className="pb-16 text-center">Contribute now</h2>
+        <h2 className="pb-16 text-center">
+          Contr
+          <wbr />
+          ibute now
+        </h2>
 
         <div className="m-auto flex justify-center text-center">
           <Link href="https://github.com/UwULang" target="_blank">
@@ -29,7 +33,7 @@ export default function Sponsor() {
               alt="GitHub logo"
               title="GitHub"
               src={"/github.svg"}
-              className="inline h-24 hover:animate-pulse -lg:inline-grid -lg:pl-0"
+              className="inline h-24 hover:animate-pulse -lg:inline-grid -lg:pl-0 -sm:h-12"
             />
           </Link>
           <Link href="https://github.com/UwULang/uwulang" target="_blank">
@@ -37,7 +41,7 @@ export default function Sponsor() {
               alt="UwULang GitHub"
               title="UwULang GitHub Repo"
               src={"/stars.svg"}
-              className="inline h-24 pl-16 hover:animate-pulse"
+              className="inline h-24 pl-16 hover:animate-pulse -sm:h-12"
             />
           </Link>
         </div>
@@ -47,7 +51,7 @@ export default function Sponsor() {
               alt="Sponsor UwULang"
               title="Sponsor UwULang"
               src={"/sponsor.svg"}
-              className="inline h-24 hover:animate-pulse"
+              className="inline h-24 hover:animate-pulse -sm:h-12"
             />
           </Link>
         </div>

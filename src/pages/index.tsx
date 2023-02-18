@@ -1,11 +1,17 @@
 import { type NextPage } from "next";
 import Title from "../components/head/Title";
-import Hero from "../components/landing/Hero";
+// import Hero from "../components/landing/Hero";
 import Navbar from "../components/landing/Navbar";
 import Quote from "../components/landing/Quote";
 import Usage from "../components/landing/Usage";
 import Demo from "../components/landing/Demo";
 import Sponsor from "../components/landing/Sponsor";
+import dynamic from "next/dynamic";
+
+// import Hero lazy
+const Hero = dynamic(() => import("../components/landing/Hero"), {
+  ssr: false,
+});
 
 const Home: NextPage = () => {
   return (

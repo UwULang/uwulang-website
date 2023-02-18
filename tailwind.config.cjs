@@ -15,7 +15,7 @@ module.exports = {
         "-lg": { max: "1024px" },
         "-md": { max: "768px" },
         "-sm": { max: "640px" },
-        "3xl": { min: "1820px" },
+        "3xl": { max: "1820px" },
       },
       animation: {
         marquee: "marquee 25s linear infinite",
