@@ -26,6 +26,7 @@ const Transpiler: NextPage = () => {
 
   useEffect(() => {
     if (!bf) {
+      setTranslate("");
       return;
     }
     const translated = bf.split("").map((val: string) => {
@@ -83,6 +84,7 @@ const Transpiler: NextPage = () => {
                 setBF(e.target.value);
               }}
               value={bf}
+              spellCheck="false"
             />
           </div>
           {/* buttons for example transpiling text */}
@@ -128,8 +130,9 @@ const Transpiler: NextPage = () => {
             {/* relative copy to clipboard button at the top */}
             <div className="absolute top-0 right-0 mx-36 mt-2">
               <button
-                className="rounded-lg bg-slate-700 p-2 text-white shadow-xl transition-all hover:bg-slate-600"
+                className="rounded-lg bg-slate-700 p-2  text-white shadow-xl transition-all hover:animate-pulse hover:bg-slate-600"
                 onClick={() => copy()}
+                title="Copy to clipboard 📋"
               >
                 📋
               </button>

@@ -2,14 +2,31 @@ import Link from "next/link";
 
 interface BaseButtonProps {
   text: string;
+  title: string;
 }
 
 const stars = 6;
 
-const SponsorButton1: React.FC<BaseButtonProps> = ({ text }) => {
+const SponsorButton1: React.FC<BaseButtonProps> = ({ text, title }) => {
   return (
-    <button className="rounded-md border-2 border-dark bg-button px-8 text-3xl text-white transition-all hover:animate-pulse">
+    <button
+      className="h-[100%] rounded-3xl border-2 border-dark bg-[#5B21B6] px-12 text-5xl text-white transition-all hover:invert-[0.2] -sm:mt-8  -sm:h-24"
+      title={title}
+    >
+      <img src={"/star.svg"} className="inline h-12 pr-4 align-bottom" />
       {stars} {text}
+    </button>
+  );
+};
+
+const SponsorButton2: React.FC<BaseButtonProps> = ({ text, title }) => {
+  return (
+    <button
+      className="h-28 rounded-3xl border-2 border-dark bg-[#F472B6] py-4 px-12 text-5xl text-white transition-all hover:bg-[#e6499a]"
+      title={title}
+    >
+      <img src={"/heart.svg"} className="inline h-12 pr-4 align-bottom" />
+      {text}
     </button>
   );
 };
@@ -27,32 +44,22 @@ export default function Sponsor() {
           ibute now
         </h2>
 
-        <div className="m-auto flex justify-center text-center">
+        <div className="m-auto flex justify-center text-center -sm:flex-col">
           <Link href="https://github.com/UwULang" target="_blank">
             <img
               alt="GitHub logo"
               title="GitHub"
               src={"/github.svg"}
-              className="inline h-24 hover:animate-pulse -lg:inline-grid -lg:pl-0 -sm:h-12"
+              className="mr-4 inline h-24 hover:animate-pulse -lg:inline-grid -lg:pl-0 -sm:h-24"
             />
           </Link>
           <Link href="https://github.com/UwULang/uwulang" target="_blank">
-            <img
-              alt="UwULang GitHub"
-              title="UwULang GitHub Repo"
-              src={"/stars.svg"}
-              className="inline h-24 pl-16 hover:animate-pulse -sm:h-12"
-            />
+            <SponsorButton1 text="Stars" title="UwULang GitHub Repo" />
           </Link>
         </div>
         <div className="m-auto flex justify-center pt-16 text-center">
           <Link href="https://github.com/UwULang/uwulang" target="_blank">
-            <img
-              alt="Sponsor UwULang"
-              title="Sponsor UwULang"
-              src={"/sponsor.svg"}
-              className="inline h-24 hover:animate-pulse -sm:h-12"
-            />
+            <SponsorButton2 text="Sponsor" title="Sponsor UwULang" />
           </Link>
         </div>
         <br />
