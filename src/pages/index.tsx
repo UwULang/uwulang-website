@@ -22,10 +22,13 @@ const Home: NextPage = () => {
           <Quote />
         </section>
         <section>
-          <Usage />
-        </section>
-        <section>
           <Demo />
+        </section>
+        <div className="m-auto w-[50%]">
+          <hr className="border-dark/65 border-t-[3px]" />
+        </div>
+        <section>
+          <Usage />
         </section>
         <section>
           <Sponsor />

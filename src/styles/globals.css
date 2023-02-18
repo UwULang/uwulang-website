@@ -36,6 +36,13 @@
   .banner_slanted {
     transform: rotate(-2deg) translateZ(0) translateY(-60px) scale(1.1);
   }
+
+  .abstract_background {
+    background-image: url("/abstract.svg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
+  }
   /* Header on load anim */
   .navborder::after {
     content: "";

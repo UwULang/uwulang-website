@@ -3,9 +3,6 @@ import Button from "../common/Button";
 export default function Demo() {
   return (
     <>
-      <div className="m-auto w-[50%]">
-        <hr className="border-dark/65 border-t-[3px]" />
-      </div>
       <div className="m-auto max-w-4xl p-32 pt-16 text-dark" id="demo">
         <h2 className="pb-16 text-center text-8xl -lg:text-6xl">Try it here</h2>
         <div className="w-full animate-pulse rounded-xl bg-dark shadow-xl">

@@ -11,7 +11,7 @@ interface BaseButtonProps {
 
 const BaseButton: React.FC<BaseButtonProps> = ({ text }) => {
   return (
-    <button className="cursor-not-allowed rounded-full border-2 border-dark bg-button px-10 py-3 text-3xl text-dark transition-all hover:bg-buttonHover">
+    <button className="cursor-not-allowed rounded-full border-2 border-dark bg-button px-10 py-3 text-center text-3xl text-dark transition-all hover:bg-buttonHover">
       {text}
     </button>
   );
