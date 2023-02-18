@@ -47,13 +47,9 @@ export default function Navbar() {
                 </Link>
               </nav>
             </li>
-            <li className="mx-4 cursor-not-allowed">
+            <li className="mx-4">
               <nav>
-                <Link
-                  href="/transpiler"
-                  title="Transpiler"
-                  className="cursor-not-allowed"
-                >
+                <Link href="/transpiler" title="Transpiler">
                   Transpiler
                 </Link>
               </nav>

@@ -19,6 +19,7 @@ export default function Quote() {
         <div className="animate-marquee whitespace-nowrap py-6">
           {msg_1
             .split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/)
+            .filter((value) => value !== "")
             .map((char, index) => {
               return (
                 <span className="mx-4 text-4xl" key={`1-${index}`}>
@@ -31,6 +32,7 @@ export default function Quote() {
         <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-6">
           {msg_2
             .split(/([\uD800-\uDBFF][\uDC00-\uDFFF])/)
+            .filter((value) => value !== "")
             .map((char, index) => {
               return (
                 <span className="mx-4 text-4xl" key={`2-${index}`}>

@@ -43,6 +43,20 @@
     background-size: fill;
     background-position: center;
   }
+
+  .abstract_background2 {
+    background-image: url("/abstract2.svg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: center;
+  }
+
+  .abstract_background3 {
+    background-image: url("/abstract3.svg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: right bottom;
+  }
   /* Header on load anim */
   .navborder::after {
     content: "";
