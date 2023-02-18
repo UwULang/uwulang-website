@@ -1,7 +1,7 @@
 export default function Usage() {
   return (
-    <div className="m-auto max-w-4xl p-32 pt-16  pb-0 text-8xl text-dark -lg:text-6xl -md:p-4">
-      <h2 className="pb-16 text-center">Used by</h2>
+    <div className="m-auto max-w-4xl p-32 pt-16 pb-0 text-8xl text-dark -lg:text-6xl -md:p-4">
+      <h2 className="pb-16 text-center -md:pb-4">Used by</h2>
 
       <div>
         <img

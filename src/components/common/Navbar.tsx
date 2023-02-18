@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import MobileNav from "../common/MobileNav";
+import MobileNav from "./MobileNav";
 
 export default function Navbar() {
   // animate opacity on load
