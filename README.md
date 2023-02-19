@@ -4,6 +4,8 @@
 
 The official landing page for UwULang!
 
+Visit the website at [uwulang.com](https://uwulang.vercel.app/)
+
 ## Mockup
 
 ![Mockup](img/demo.png)
