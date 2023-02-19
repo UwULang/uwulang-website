@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     // animate border bottom on load from left to right
-    <header className="navborder fixed top-0 z-50 w-full bg-gradient-to-b from-white/90 to-transparent backdrop-blur-sm">
+    <header className="navborder fixed top-0 z-50 w-full bg-gradient-to-b from-white/50 to-white/10 backdrop-blur-sm">
       <div className="m-auto flex max-w-[88em] flex-1 items-center justify-between px-16 -sm:px-4">
         <div className="flex items-center">
           <Link href="/">

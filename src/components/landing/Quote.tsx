@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import { useIntersection } from "react-use";
 
-const msg_1 = "👇😒👇👇👇👉👆👈😡👉🥺👇👇😒👇👇👇👇 ";
-const msg_2 = "👇👉👆👈😡👉🥺👉👇😒👇👇👇👉👆👈😡👉🥺";
+const msg_1 = "👇😒👇👇👇👉👆👈😡👉🥺👇👇😒👇👇👇👇👇";
+const msg_2 = "👉👆👈😡👉🥺👉👇😒👇👇👇👉👆👈😡👉🥺👇";
 
 export default function Quote() {
   const [scrolled1, setScrolled1] = useState(false);
