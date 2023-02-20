@@ -42,7 +42,11 @@ export default function Navbar() {
             {/* not available for now */}
             <li className="mx-4">
               <nav>
-                <Link href="/docs" title="Docs" className="cursor-not-allowed">
+                <Link
+                  href="https://uwulang-docs.vercel.app/"
+                  title="Docs"
+                  className=""
+                >
                   Docs
                 </Link>
               </nav>
