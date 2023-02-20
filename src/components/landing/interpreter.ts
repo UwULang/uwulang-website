@@ -47,13 +47,13 @@ class Memory {
   };
 }
 
-function askQuestion() {
+function askQuestion(): number {
   const char = prompt("Enter a character: ");
   if (!char) return 0;
   return char?.charCodeAt(0) % 128;
 }
 
-export default async function* run(instructions: string) {
+export default function* run(instructions: string) {
   const memory = new Memory();
 
   const parsedInstructions: string[] = instructions
@@ -111,7 +111,7 @@ export default async function* run(instructions: string) {
         break;
       case "😳".codePointAt(0):
         // block.val = prompt()
-        block.val = await askQuestion();
+        block.val = askQuestion();
         break;
       case "🥺".codePointAt(0):
         yield String.fromCharCode(block.val);

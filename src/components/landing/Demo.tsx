@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+/* eslint-disable @typescript-eslint/require-await */
+/* eslint-disable @typescript-eslint/no-misused-promises */
+import { useState } from "react";
 import Interpreter from "./interpreter";
 
 const sampleSet = [
@@ -28,13 +30,13 @@ export default function Demo() {
     const generator = Interpreter(currentEntry!);
     let output = "";
     let count = 0;
-    let res = await generator.next();
+    let res = generator.next();
     while (res.value && count < 200) {
       output += res.value;
-      res = await generator.next();
+      res = generator.next();
       count++;
     }
-    return setOutput(`${output}${count > 199 ? "..." : ""}`);
+    setOutput(`${output}${count > 199 ? "..." : ""}`);
   };
 
   return (
@@ -115,7 +117,7 @@ export default function Demo() {
         />
         <div className="pt-8 text-center">
           <button
-            onClick={async () => await run()}
+            onClick={() => run()}
             className="rounded-full border-2 border-dark bg-button px-10 py-3 text-center text-3xl text-dark transition-all hover:bg-button/70"
           >
             Run {">>"}
