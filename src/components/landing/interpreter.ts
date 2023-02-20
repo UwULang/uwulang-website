@@ -121,7 +121,6 @@ export default function* run(instructions: string) {
           block.val === 0 ? matchingPos.get(instructionAt)! - 1 : instructionAt;
         break;
       case "😡".codePointAt(0):
-        const getPair = matchingPos.get(instructionAt);
         instructionAt =
           block.val !== 0 ? matchingPos.get(instructionAt)! - 1 : instructionAt;
         break;

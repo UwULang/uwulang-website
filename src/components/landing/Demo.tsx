@@ -86,7 +86,7 @@ export default function Demo() {
                         index
                           ? "text-gray-700 hover:text-gray-900"
                           : "text-red-500 hover:text-red-700"
-                      } block px-4 py-2 text-sm hover:bg-gray-100`}
+                      } block cursor-pointer px-4 py-2 text-sm hover:bg-gray-100`}
                       role="menuitem"
                       tabIndex={-1}
                       id={`menu-item-${index}`}
