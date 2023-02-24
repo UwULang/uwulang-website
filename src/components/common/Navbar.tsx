@@ -39,7 +39,6 @@ export default function Navbar() {
                 </Link>
               </nav>
             </li>
-            {/* not available for now */}
             <li className="mx-4">
               <nav>
                 <Link
@@ -48,6 +47,18 @@ export default function Navbar() {
                   className=""
                 >
                   Docs
+                </Link>
+              </nav>
+            </li>
+            <li className="mx-4">
+              <nav>
+                <Link
+                  href="https://github.com/UwULang/uwulang/releases"
+                  title="Download"
+                  className=""
+                  target="_blank"
+                >
+                  Download
                 </Link>
               </nav>
             </li>

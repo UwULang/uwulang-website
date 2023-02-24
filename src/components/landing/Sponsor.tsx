@@ -80,6 +80,14 @@ export default function Sponsor() {
             <SponsorButton2 text="Sponsor" title="Sponsor UwULang" />
           </Link>
         </div>
+        {/* <div className="m-auto flex justify-center pt-16 text-center">
+          <Link
+            href="https://github.com/UwULang/uwulang/releases"
+            target="_blank"
+          >
+            <SponsorButton2 text="Download" title="Download UwULang" />
+          </Link>
+        </div> */}
         <br />
       </div>
     </div>
