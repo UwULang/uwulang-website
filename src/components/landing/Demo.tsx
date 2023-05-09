@@ -141,7 +141,11 @@ export default function Demo() {
                 onClick={() => {
                   // insert emoji at cursor position
                   let cursor = textareaRef.current?.selectionStart;
-                  if (cursor === undefined || textareaRef.current === null) {
+                  if (
+                    cursor === undefined ||
+                    textareaRef.current === null ||
+                    currentEntry === undefined
+                  ) {
                     return;
                   }
                   console.log(cursor);
@@ -151,10 +155,11 @@ export default function Demo() {
                   } else {
                     setCursorPos(cursor + 2);
                   }
-                  const text =
-                    currentEntry?.slice(0, cursor) +
-                    emoji +
-                    currentEntry?.slice(cursor);
+                  // convert to string literal
+                  const text = `${currentEntry?.slice(
+                    0,
+                    cursor
+                  )}${emoji}${currentEntry?.slice(cursor)}`;
                   setCurrentEntry(text);
                 }}
                 title={value}
